@@ -26,8 +26,25 @@ console.log(person["name"])         // Bracket Notation
 
 // Arrays
 
+let a = [1, 3, 4];
+console.log(a[1]);
+console.log(a.length);              // Returns the length of an array
+
+// Functions
+
+function greet() {
+    console.log('Hello world');
+}
+
+greet();
 
 
+function square(numb){
+    return numb * numb;
+}
+
+let number = square(2);
+console.log(number);
 
 
 
