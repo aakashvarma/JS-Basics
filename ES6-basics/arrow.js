@@ -20,9 +20,11 @@ callBack(true,
     );
 
 // Arrow functions
+let square = n => console.log(n*n);
+square(5);
 
-
-
+let add = (a, b) => a+b;
+console.log(add(2,4));
 
 
 
