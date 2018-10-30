@@ -26,7 +26,6 @@ function showMessage(name, message){
 
 showMessage("Varma", "What's up bro?")
 
-Function Expressions and Arrow functions
 
 
 
