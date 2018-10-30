@@ -19,6 +19,21 @@ switch(number){
     console.log("This is an unknown case")
 }
 
+// Functions
+function showMessage(name, message){
+    console.log(name + ": " + message);
+}
+
+showMessage("Varma", "What's up bro?")
+
+Function Expressions and Arrow functions
+
+
+
+
+
+
+
 
 
 
