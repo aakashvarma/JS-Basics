@@ -36,6 +36,12 @@ class User {
     }
 }
 
+class Admin extends User{
+    // Inheritance
+    deleteUser(){
+        
+    }
+}
 let userOne = new User('Varma', "aakashvarma@gmail.com");
 let userTwo = new User('Aakash', "varma@gmail.com");
 
