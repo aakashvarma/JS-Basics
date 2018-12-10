@@ -51,13 +51,30 @@
 
 // // ###############################################################################
 
-// var person = {
-//     firstName: "Aakash",
-//     lastName: "Varma",
-//     email: "aakashvarma18@gmail.com"
-// };
+var person = {
+    firstName: "Aakash",
+    lastName: "Varma",
+    email: "aakashvarma18@gmail.com",
+    name: function(){
+        return this.firstName +" "+ this.lastName;
+    }
+};
 
-var 
+person.nationality = "Indian"
+
+// var person = new Object();
+
+// person.name = "Aakash Varma";
+// person.email = "aakashvarma18@gmail.com";
+
+// person.nation = "English";
+console.log(person.nation);
+console.log(person.name);
+console.log(person.firstName);
+
+
+
+
 
 
 
