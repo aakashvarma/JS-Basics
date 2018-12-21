@@ -43,7 +43,7 @@ let server = http.createServer((req, res) => {
     if (req.url === '/' || req.url === '/home'){
         res.writeHead(200, {'Content-Type': 'text/html'});
         fs.createReadStream(__dirname + '/index.html').pipe(res);
-    } else if(req.url === '/api/varma'){
+    } else if(req.url === '/api/aakash'){
         res.writeHead(200, {'Content-Type': 'application/json'});
         let myObj = {
             name: 'Aakash Varma',

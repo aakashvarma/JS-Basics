@@ -39,6 +39,15 @@ let myWriteStream = fs.createWriteStream(__dirname + '/writeme.txt');
 
 myReadStream.pipe(myWriteStream);
 
+// To write the data to a client
+
+let http = require('http');
+let fs = require('fs');
+
+let server = http.createServer((req, res) => {
+    res.writeHead(200, 'Content-Type': 'text/html');
+    
+})
 
 
 
