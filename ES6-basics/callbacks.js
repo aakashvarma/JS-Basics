@@ -24,9 +24,25 @@ function createPost(post, callback){
 createPost({title: 'Post Three', body: "This is post three"}, getPosts);
 
 
+// another axample of callbacks
 
+function add(){
+    let a = 2;
+    let b = 3;
+    setTimeout(function(){
+        console.log(a + b);
+    }, 1000);
+};
 
+function multiply(a, b, callback){
+    setTimeout(function(){
+        console.log(a * b);
+        callback();
+    }, 2000);
+};
 
+// add();
+multiply(2, 3, add);
 
 
 
