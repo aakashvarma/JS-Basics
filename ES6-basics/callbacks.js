@@ -13,40 +13,48 @@ function getPosts(){
     }, 1000);
 };
 
-function createPost(post, callback){
+function createPost(post){
     setTimeout(() => {
         posts.push(post);
-        callback();
+        // callback();
     }, 2000);
 };
 
 // getPosts();
-createPost({title: 'Post Three', body: "This is post three"}, getPosts);
+// createPost({title: 'Post Three', body: "This is post three"}, getPosts);
 
+async function init() {
+    await createPost({title: 'Post Three', body: "This is post three"});
+    getPosts();
+}
 
+init();
 // another axample of callbacks
 
-function add(){
-    let a = 2;
-    let b = 3;
-    setTimeout(function(){
-        console.log(a + b);
-    }, 1000);
-};
+// function add(){
+//     let a = 2;
+//     let b = 3;
+//     setTimeout(function(){
+//         console.log(a + b);
+//     }, 1000);
+// };
 
-function multiply(a, b, callback){
-    setTimeout(function(){
-        console.log(a * b);
-        callback();
-    }, 2000);
-};
+// function multiply(a, b){
+//     setTimeout(function(){
+//         console.log(a * b);
+//         // callback();
+//     }, 2000);
+// };
 
 // add();
-multiply(2, 3, add);
+// multiply(2, 3);
 
+// async function init(){
+//     await multiply(2, 3);
+//     add();
+// };
 
-
-
+// init();
 
 
 
